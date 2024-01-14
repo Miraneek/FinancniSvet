@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Search Bar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            transition: width 0.3s ease;
+        }
+
+        .search-bar {
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .expand-btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .expand-btn:focus {
+            outline: none;
+        }
+
+        .expanded {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar" id="navbar">
+    <input type="text" class="search-bar" placeholder="Search...">
+    <button class="expand-btn" onclick="toggleExpand()">Expand</button>
+</div>
+
+<script>
+    function toggleExpand() {
+        const navbar = document.getElementById('navbar');
+        const expandBtn = document.querySelector('.expand-btn');
+
+        navbar.classList.toggle('expanded');
+        expandBtn.classList.toggle('expanded');
+
+        if (navbar.classList.contains('expanded')) {
+            expandBtn.innerHTML = 'Collapse';
+        } else {
+            expandBtn.innerHTML = 'Expand';
+        }
+    }
+
+    // Collapse the navbar when clicking outside the search bar
+    window.addEventListener('click', function(event) {
+        const navbar = document.getElementById('navbar');
+        const searchInput = document.querySelector('.search-bar');
+        const expandBtn = document.querySelector('.expand-btn');
+
+        if (!navbar.contains(event.target) && event.target !== searchInput && event.target !== expandBtn) {
+            navbar.classList.remove('expanded');
+            expandBtn.classList.remove('expanded');
+            expandBtn.innerHTML = 'Expand';
+        }
+    });
+</script>
+
+</body>
+</html>
