@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         { title: 'Kde hledat brigádu', keywords: ['brigády', 'hledat', 'práce'] },
         { title: 'Druhy daní', keywords: ['daně', 'poplatky', 'druhy daní'] },
         { title: 'do-ceho-investovat', keywords: ['investice', 'peníze', 'úspory', 'do ceho investovat', 'investovat', "investice"] },
+        { title: "co-je-to-ruzovy-papir", keywords: ["co je to růžový papír", "růžový papír", "ruzovy papir", "papír", "daně", "odpištění daní"] }
     ];
 
     const form = document.querySelector('.search-bar');
