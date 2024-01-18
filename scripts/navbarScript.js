@@ -6,19 +6,22 @@ links.forEach((link) => {
     let imgInsideSection = link.querySelector("img");
     link.addEventListener("mouseover", () => {
         aInsideSection.style.color = "#0094FF";
-        svgInsideSection.style.stroke = "#00b341";
-        if (svgInsideSection.classList.contains("icon-tabler-news")){
-            svgInsideSection.style.stroke = "#fd0061";
+        if (svgInsideSection) {
+            svgInsideSection.style.stroke = "#00b341";
+            if (svgInsideSection.classList.contains("icon-tabler-news")) {
+                svgInsideSection.style.stroke = "#fd0061";
+            }
         }
-        if (imgInsideSection != null){
-            console.log("vgbh")
+        if (imgInsideSection) {
             imgInsideSection.style.filter = "grayscale(0%)";
         }
     })
     link.addEventListener("mouseout", () => {
         aInsideSection.style.color = "#3d3d3d";
-        svgInsideSection.style.stroke = "#3d3d3d";
-        if (imgInsideSection){
+        if (svgInsideSection) {
+            svgInsideSection.style.stroke = "#3d3d3d";
+        }
+        if (imgInsideSection) {
             imgInsideSection.style.filter = "grayscale(100%)";
         }
     })
