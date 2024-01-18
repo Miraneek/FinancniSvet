@@ -1,32 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const articles = [
-        { title: 'Kde hledat brigádu', keywords: ['brigády', 'hledat', 'práce'] },
-        { title: 'Druhy daní', keywords: ['daně', 'poplatky', 'druhy daní'] },
-        { title: 'do-ceho-investovat', keywords: ['investice', 'peníze', 'úspory', 'do ceho investovat', 'investovat', "investice"] },
-        { title: "co-je-to-ruzovy-papir", keywords: ["co je to růžový papír", "růžový papír", "ruzovy papir", "papír", "daně", "odpištění daní"] }
-    ];
+let links = document.querySelectorAll(".dropdown-content section");
 
-    const form = document.querySelector('.search-bar');
-
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        const searchInput = document.getElementById('search').value.toLowerCase();
-        const matchingArticles = [];
-
-        // Search for matching articles
-        articles.forEach(article => {
-            if (article.keywords.some(keyword => keyword.toLowerCase().includes(searchInput))) {
-                matchingArticles.push(article);
-            }
-        });
-
-        if (matchingArticles.length > 0) {
-            // Redirect to the page with the best match
-            window.location.href = `../clanky/${matchingArticles[0].title}.html`;
-        } else {
-            // Handle no matching articles found
-            alert('No matching articles found');
+links.forEach((link) => {
+    let aInsideSection = link.querySelector("a");
+    let svgInsideSection = link.querySelector("svg");
+    let imgInsideSection = link.querySelector("img");
+    link.addEventListener("mouseover", () => {
+        aInsideSection.style.color = "#0094FF";
+        svgInsideSection.style.stroke = "#00b341";
+        if (svgInsideSection.classList.contains("icon-tabler-news")){
+            svgInsideSection.style.stroke = "#fd0061";
         }
-    });
-});
+        if (imgInsideSection != null){
+            console.log("vgbh")
+            imgInsideSection.style.filter = "grayscale(0%)";
+        }
+    })
+    link.addEventListener("mouseout", () => {
+        aInsideSection.style.color = "#3d3d3d";
+        svgInsideSection.style.stroke = "#3d3d3d";
+        if (imgInsideSection){
+            imgInsideSection.style.filter = "grayscale(100%)";
+        }
+    })
+})
