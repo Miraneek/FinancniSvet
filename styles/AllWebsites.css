@@ -13,6 +13,7 @@
 .header {
     color: #ffffff;
     padding: 15px 20px;
+    position: fixed;
 }
 
 nav {
@@ -83,6 +84,10 @@ nav {
     color: #3d3d3d;
     font-weight: 750;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
 
 .dropdown a:hover {
@@ -150,4 +155,67 @@ nav {
 .right-side{
     display: flex;
     justify-content: space-between;
+}
+@media  only screen and (max-width: 800px) {
+    .right-side{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .dropdown{
+        position: static;
+    }
+
+    .dropdown-content{
+        position: fixed;
+        transform: translate(0%);
+        left: 0;
+        width: 100%;
+    }
+
+    .header{
+        width: 100%;
+        padding: 0;
+    }
+
+    nav{
+        padding: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .linksSection{
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchBarSection {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .searchBarSection form{
+        width: 100%;
+    }
+
+    .search-bar input{
+        width: 100%;
+        border-radius: 0;
+        border-right: none;
+        border-left: none;
+    }
+
+    .linksSection{
+        margin-top: 10px;
+    }
+
+    .logoSection {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
 }
