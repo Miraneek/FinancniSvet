@@ -1,16 +1,44 @@
 .invisibleblock{
-
     margin-top: 180px;
     width: 480px;
 }
 .container{
-
    display: flex;
     justify-content: center;
 }
+.article-text{
+    font-size: 20px;
+}
 .artliclename{
+    font-size: 30px;
+    font-weight: bold;
     margin-bottom: 20px;
 }
-.articleimage-right{
+.articleimage-right img{
 
+    width: 500px;
+
+
+
+}
+.articleimage-left img{
+
+     width: 500px;
+
+ }
+.main{
+
+    display: flex;
+    gap: 25px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex{
+    display: flex;
+}
+
+.flex:nth-child(2n){
+    flex-direction: row-reverse;
 }
