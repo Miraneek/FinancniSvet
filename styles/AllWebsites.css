@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color: #f7f7ff
+    background-color: #f7f7ff;
 }
 
 .logoSection img{
@@ -16,6 +16,28 @@
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.unscrolled{
+    background-color: #f7f7ff;
+    box-shadow: none;
+    transition: 100ms ease-in-out;
+}
+
+.unscrolled *{
+    background-color: #f7f7ff;
+    transition: 100ms ease-in-out;
+}
+
+.scrolled{
+    background-color: #e5e5ee;
+    box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.1);
+    transition: 100ms ease-in-out;
+}
+
+.scrolled *:not(.dropdown-content *, .search-bar label *){
+    background-color: #e5e5ee;
+    transition: 100ms ease-in-out;
 }
 
 nav {
