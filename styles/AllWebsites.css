@@ -220,4 +220,16 @@ nav {
         align-items: end;
     }
 
+    svg{
+        stroke: #00b341;
+    }
+
+    .icon-tabler-news{
+        stroke: #fd0061;
+    }
+
+    .dropdown-content img{
+        filter: none;
+    }
+
 }
