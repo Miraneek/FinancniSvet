@@ -10,6 +10,10 @@
     height: 100px;
 }
 
+main{
+    margin-top: 200px;
+}
+
 .header {
     color: #ffffff;
     padding: 15px 0;
