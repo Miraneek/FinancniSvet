@@ -37,3 +37,13 @@ addEventListener("scroll", () => {
         header.classList.add("unscrolled");
     }
 });
+
+let icon = document.querySelector(".menu_icon");
+
+icon.addEventListener("click", () => {
+    icon.classList.toggle("clicked");
+    let dropdown = document.querySelector(".right-side");
+    dropdown.classList.toggle("show");
+});
+
+
