@@ -7,15 +7,11 @@
 }
 
 body{
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: #f7f7ff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.logoSection img {
-    height: 100px;
 }
 
 .containerHamburgerIcon {
@@ -101,7 +97,7 @@ main {
     transition: 100ms ease-in-out;
 }
 
-.scrolled *:not(.dropdown-content *, .search-bar label *) {
+.scrolled *:not(.dropdown-content *, .search-bar label *, .containerHamburgerIcon span ) {
     background-color: #e5e5ee;
     transition: 100ms ease-in-out;
 }
@@ -144,8 +140,7 @@ nav {
     border-radius: 15px;
     border: 2px solid #000;
     box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.25);
-    max-width: 350px;
-    width: 100%;
+    width: 400px;
     height: 40px;
     padding-left: 40px;
     padding-right: 10px;
@@ -300,6 +295,7 @@ footer *{
 .footer-links h3 {
     font-size: 30px;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .footer-links h4 {
@@ -326,6 +322,11 @@ hr{
 
 
 @media only screen and (max-width: 850px) {
+
+    .logoSection{
+        margin: 0;
+    }
+
     .right-side {
         display: flex;
         flex-direction: column-reverse;
@@ -353,7 +354,7 @@ hr{
         width: 100%;
         flex-direction: column;
         align-items: stretch;
-        height: 20px;
+        height: 80px;
     }
 
     .searchBarSection {
