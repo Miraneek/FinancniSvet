@@ -6,6 +6,14 @@
     background-color: #f7f7ff;
 }
 
+body{
+    min-height: 100vh;
+    background-color: #f7f7ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .logoSection img {
     height: 100px;
 }
@@ -249,6 +257,74 @@ nav {
     justify-content: space-between;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #e5e5ee;
+}
+
+footer *{
+    background-color: #e5e5ee;
+    color: black;
+}
+
+.footer-links img {
+    width: 24px;
+    margin-left: 8px;
+    border-radius: 4px;
+}
+
+.footer-links {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li{
+    width: 20%;
+}
+
+.footer-links * {
+    text-decoration: none;
+}
+
+.footer-links h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.footer-links h4 {
+    font-size: 22px;
+}
+
+.footer-links h5 {
+    font-size: 16px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+hr{
+    height: 2px;
+    color: #3d3d3d;
+    width: 100%;
+}
+
+
 @media only screen and (max-width: 718px) {
     .right-side {
         display: flex;
@@ -277,6 +353,7 @@ nav {
         width: 100%;
         flex-direction: column;
         align-items: stretch;
+        height: 20px;
     }
 
     .searchBarSection {
@@ -335,7 +412,7 @@ nav {
         display: inline-block;
     }
 
-    svg {
+    nav svg {
         stroke: #00b341;
     }
 
@@ -364,5 +441,21 @@ nav {
     .icon.clicked + .right-side {
         visibility: visible;
         opacity: 1;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .footer-links ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer-links li{
+        width: 100%;
     }
 }
