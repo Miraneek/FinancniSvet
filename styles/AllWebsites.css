@@ -303,7 +303,7 @@ footer *{
 }
 
 .footer-links h4 {
-    font-size: 22px;
+    font-size: 26px;
 }
 
 .footer-links h5 {
@@ -325,7 +325,7 @@ hr{
 }
 
 
-@media only screen and (max-width: 718px) {
+@media only screen and (max-width: 850px) {
     .right-side {
         display: flex;
         flex-direction: column-reverse;
@@ -424,6 +424,10 @@ hr{
         filter: none;
     }
 
+    .dropdown-content{
+        transform: translate(-2.5%);
+    }
+
     .right-side {
         transform: translate(100%);
         transition: transform 0.3s ease, visibility 0s linear 0.3s, opacity 0.3s ease; /* Adjust the duration and timing function as needed */
@@ -458,4 +462,8 @@ hr{
     .footer-links li{
         width: 100%;
     }
+    .right-side{
+        padding-bottom: 10000000px;
+    }
+
 }
