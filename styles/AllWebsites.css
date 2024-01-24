@@ -26,6 +26,7 @@ body{
     color: #2ca0f5;
     font-weight: 1000;
     text-decoration: none;
+    background-color: transparent;
 }
 
 .containerHamburgerIcon {
@@ -84,7 +85,7 @@ main {
     margin-top: 200px;
 }
 
-.header {
+header {
     color: #ffffff;
     padding-bottom: 15px;
     position: fixed;
@@ -358,6 +359,7 @@ hr{
     .header {
         width: 100%;
         padding: 0;
+        height: 180px;
     }
 
     nav {
