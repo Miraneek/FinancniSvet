@@ -20,32 +20,12 @@ body{
     padding: 8px 0;
     font-weight: 500;
     font-size: 16px;
-    position: relative;
-}
-
-.zpetnaVazba p{
-    box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
-    z-index: 1000;
 }
 
 .zpetnaVazba a{
     color: #2ca0f5;
     font-weight: 1000;
     text-decoration: none;
-    background-color: transparent;
-}
-
-.zpetnaVazba button{
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 10px;
-    top: 4px;
-    bottom: 0;
-    cursor: pointer;
-}
-
-.zpetnaVazba svg{
     background-color: transparent;
 }
 
@@ -226,6 +206,7 @@ nav {
     position: absolute;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
     width: max-content;
     border-radius: 20px;
     background-color: white;
