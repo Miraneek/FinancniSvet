@@ -14,6 +14,15 @@ body{
     justify-content: space-between;
 }
 
+.zpetnaVazba{
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    z-index: 10;
+}
+
+header *{
+    position: relative;
+}
+
 .zpetnaVazba p, .zpetnaVazba a{
     background-color: #fd0061;
     text-align: center;
@@ -110,8 +119,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
+    padding-top: 20px;
 }
 
 .unscrolled {
@@ -126,13 +136,13 @@ nav {
 }
 
 .scrolled {
-    background-color: #e5e5ee;
+    background-color: #dddde7;
     box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.1);
     transition: 100ms ease-in-out;
 }
 
-.scrolled *:not(.dropdown-content *, .search-bar label *, .containerHamburgerIcon span, .zpetnaVazba *) {
-    background-color: #e5e5ee;
+.scrolled *:not(.dropdown-content *, .containerHamburgerIcon span, .zpetnaVazba *) {
+    background-color: #dddde7;
     transition: 100ms ease-in-out;
 }
 
@@ -161,16 +171,24 @@ nav {
     align-items: center;
 }
 
+.borderForInput{
+    border-radius: 14px;
+    background: rgb(45,180,124);
+    background: linear-gradient(0deg, rgba(45,180,124,1) 0%, rgba(36,128,189,1) 100%);
+    background-repeat: no-repeat;
+    padding: 4px;
+}
+
 .search-bar input {
-    border-radius: 15px;
-    border: 2px solid #000;
+    border-radius: 12px;
+    border: none;
     box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.25);
     width: 400px;
     height: 46px;
     padding-left: 40px;
     padding-right: 10px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .search-bar input:focus {
