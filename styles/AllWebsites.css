@@ -29,6 +29,19 @@ body{
     background-color: transparent;
 }
 
+.zpetnaVazba button{
+    background-color: transparent;
+    border: none;
+    top: 5px;
+    border-bottom: 0;
+    position: absolute;
+    right: 20px ;
+}
+
+.zpetnaVazba svg{
+    background-color: transparent;
+}
+
 .containerHamburgerIcon {
     position: relative;
     display: none;

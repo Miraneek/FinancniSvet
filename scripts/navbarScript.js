@@ -46,4 +46,8 @@ icon.addEventListener("click", () => {
     dropdown.classList.toggle("show");
 });
 
+document.querySelector("#removeZpetnaVazba").addEventListener("click", () => {
+    document.querySelector(".zpetnaVazba").remove()
+})
+
 
