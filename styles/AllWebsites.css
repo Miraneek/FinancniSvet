@@ -14,13 +14,14 @@ body{
     justify-content: space-between;
 }
 
+main{
+    margin-top: 100px;
+}
+
 .zpetnaVazba{
     box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
     z-index: 10;
-}
-
-header *:not(.search-bar *){
-    position: relative;
+    margin-bottom: 10px;
 }
 
 .zpetnaVazba p, .zpetnaVazba a{
@@ -121,7 +122,6 @@ nav {
     align-items: stretch;
     width: 80%;
     margin: 0 auto;
-    padding-top: 20px;
 }
 
 .unscrolled {
@@ -209,7 +209,11 @@ nav {
 
 .search-bar button i {
     font-size: 20px;
-    color: #3d3d3d;
+    display: inline-block;
+    background: linear-gradient(0deg, rgba(45,180,124,1) 0%, rgba(36,128,189,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .dropdown {
