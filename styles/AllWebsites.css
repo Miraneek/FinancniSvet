@@ -131,7 +131,7 @@ nav {
     transition: 100ms ease-in-out;
 }
 
-.scrolled *:not(.dropdown-content *, .search-bar label *, .containerHamburgerIcon span, .zpetnaVazba p, .zpetnaVazba a) {
+.scrolled *:not(.dropdown-content *, .search-bar label *, .containerHamburgerIcon span, .zpetnaVazba *) {
     background-color: #e5e5ee;
     transition: 100ms ease-in-out;
 }
@@ -347,6 +347,10 @@ hr{
 
 
 @media only screen and (max-width: 900px) {
+
+    .zpetnaVazba svg{
+        background-color: transparent;
+    }
 
     .logoSection{
         margin: 0;
