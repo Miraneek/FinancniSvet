@@ -114,6 +114,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 nav {
@@ -122,6 +123,7 @@ nav {
     align-items: stretch;
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .unscrolled {
@@ -180,7 +182,7 @@ nav {
 }
 
 .search-bar input {
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
     box-shadow: 0 4px 100px 0 rgba(0, 0, 0, 0.25);
     width: 400px;
@@ -230,6 +232,7 @@ nav {
     align-items: center;
     gap: 4px;
     border: none;
+    cursor: pointer;
 }
 
 .dropdown a:hover, .dropdown button:hover {

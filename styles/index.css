@@ -1,0 +1,64 @@
+.first{
+    height: 80vh;
+    padding: 20px 20% 20px 20px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 60px;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first *:not(i){
+    font-family: Poppins, sans-serif;
+    line-height: 1.4;
+    background-color: transparent;
+}
+
+.first strong{
+    color: #2DB47C;
+}
+
+.first strong span{
+    color: #2480BD;
+}
+
+.first img{
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    height: 40vw;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.linearGradientBorder {
+    background: linear-gradient(0deg, rgba(45,180,124,1) 0%, rgba(36,128,189,1) 100%);
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    padding: 6px;
+    position: relative;
+    right: 150px;
+    margin-top: 20px;
+}
+
+.first a{
+    background-color: white;
+    border-radius: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first a i {
+    background: linear-gradient(0deg, rgba(45,180,124,1) 0%, rgba(36,128,189,1) 100%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 4px;
+    position: relative;
+}
