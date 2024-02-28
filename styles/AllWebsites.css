@@ -143,7 +143,7 @@ nav {
     transition: 100ms ease-in-out;
 }
 
-.scrolled *:not(.dropdown-content *, .containerHamburgerIcon span, .zpetnaVazba *, .search-bar label *) {
+.scrolled *:not(.dropdown-content *, .containerHamburgerIcon span, .zpetnaVazba *,.zpetnaVazba ,  .search-bar label *) {
     background-color: #dddde7;
     transition: 100ms ease-in-out;
 }
@@ -376,6 +376,16 @@ hr{
 
     .zpetnaVazba svg{
         background-color: transparent;
+    }
+
+    .zpetnaVazba{
+        padding-right: 40px;
+        background-color: #fd0061;
+    }
+
+    #removeZpetnaVazba{
+        top: 10%;
+        right: 10px;
     }
 
     .logoSection{
