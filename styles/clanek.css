@@ -9,20 +9,17 @@
 
     font-size: 20px;
 }
-.artliclename{
+.artliclename {
     font-weight: bold;
-    background: linear-gradient(to right, #2DB47C, #2480BD);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 30px;
+    /* Removed the gradient and made the text a solid color for better readability */
+    color: #2DB47C; /* Choose a color that stands out but is not too harsh */
+    font-size: 36px; /* slightly larger than before */
     margin-bottom: 20px;
-    border-bottom: 1px black solid;
-
+    border-bottom: 1px solid #ccc; /* softer color for the border */
 }
 .articleimage-left img{
-    border-radius: 20px;
-
-    width: 400px;
+width: 300px;
+    height: 300px;
 }
 
 .main{
@@ -53,8 +50,19 @@
     border: 1px solid black;
 }
 
-footer {
-    background-color: #2a2a2a;
-    width: 100%;
+.article-text {
+    font-size: 20px;
+    line-height: 1.6; /* improves readability */
+    color: #333; /* better for reading than pure black */
 }
 
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .article-text {
+        font-size: 18px; /* slightly smaller text for mobile devices */
+    }
+    .artliclename {
+        font-size: 30px; /* slightly smaller headings for mobile devices */
+    }
+}
