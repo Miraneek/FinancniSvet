@@ -11,15 +11,15 @@
 }
 .artliclename {
     font-weight: bold;
-    /* Removed the gradient and made the text a solid color for better readability */
-    color: #2DB47C; /* Choose a color that stands out but is not too harsh */
-    font-size: 36px; /* slightly larger than before */
+    color: #2DB47C;
+    font-size: 36px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ccc; /* softer color for the border */
+
 }
 .articleimage-left img{
 width: 300px;
     height: 300px;
+    border-radius: 20px;
 }
 
 .main{
@@ -52,17 +52,35 @@ width: 300px;
 
 .article-text {
     font-size: 20px;
-    line-height: 1.6; /* improves readability */
-    color: #333; /* better for reading than pure black */
+    line-height: 1.6;
+    color: #333;
 }
 
 
-/* Responsive design adjustments */
+
 @media (max-width: 768px) {
     .article-text {
-        font-size: 18px; /* slightly smaller text for mobile devices */
+        font-size: 18px;
     }
     .artliclename {
-        font-size: 30px; /* slightly smaller headings for mobile devices */
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 800px) { /* Adjust the pixel value to suit your layout's breakpoint */
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .articleimage-left img {
+        width: 190px;
+        height: 190px;
+    }
+    .articleimage-left {
+        padding: 10px;
+        border-radius: 20px;
+        border: 0px solid black;
+    }
+    .flex:nth-child(1n) {
+        flex-direction: row-reverse;
     }
 }
